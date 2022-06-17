@@ -6,7 +6,7 @@ import HideOverlay from './Component/Elements/HideOverlay';
 
 function App() {
   return <>
-    <FullScreenButton />
+    {/* <FullScreenButton /> */}
     <HideOverlay />
     <Globe />
   </>
