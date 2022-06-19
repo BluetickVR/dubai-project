@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import SettingsBackupRestoreIcon from '@mui/icons-material/SettingsBackupRestore';
+
 
 const PageSelector = () => {
   return (
@@ -11,10 +13,22 @@ const PageSelector = () => {
   );
 };
 
+const PrevPage = () => {
+  return (
+    <>
+      <SettingsBackupRestoreIcon />
+      {/* <FontAwesomeIcon icon="fa-duotone fa-rotate-left" />
+      <FontAwesomeIcon icon="fa-thin fa-circle-arrow-left" /> */}
+    </>
+  );
+}
+
+
 function Navigator(props) {
   return (
     <Style className="flex-center">
       <div className="title">Shobha</div>
+      <PrevPage />
       <PageSelector />
       <div className="expand-arrow">arrow</div>
     </Style>
